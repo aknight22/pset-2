@@ -1,12 +1,12 @@
 const readlineSync = require("readline-sync");
 
-const centimetersPerInch = 2.54;
+const CM_PER_INCH = 2.54;
 
 let width = readlineSync.question("\nWidth: ");
 let length = readlineSync.question("Length: ");
 
-let widthInCentimeters = width * centimetersPerInch;
-let lengthInCentimeters = length * centimetersPerInch
+let widthInCentimeters = width * CM_PER_INCH;
+let lengthInCentimeters = length * CM_PER_INCH
 let perimeter = (lengthInCentimeters + widthInCentimeters) * 2;
 perimeter = perimeter.toLocaleString("en", {minimumFractionDigits: 2, maximumFractionDigits:2});
 

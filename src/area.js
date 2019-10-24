@@ -1,12 +1,12 @@
 const readlineSync = require("readline-sync");
 
-const millimetersPerInch = 25.4;
+const MM_PER_INCH = 25.4;
 
 let width = readlineSync.question("\nWidth: ");
 let length = readlineSync.question("Length: ");
 
-let widthInMillimeters = width * millimetersPerInch;
-let lengthInMillimeters = length * millimetersPerInch;
+let widthInMillimeters = width * MM_PER_INCH;
+let lengthInMillimeters = length * MM_PER_INCH;
 let area = widthInMillimeters * lengthInMillimeters;
 area = area.toLocaleString("en", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
