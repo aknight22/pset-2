@@ -14,4 +14,4 @@ let biWeekly = salary /24;
 
 biWeekly= biWeekly.toLocaleString("en", { style: currency, currency: USD});
 
-console.log("Your take-home pay each check will be " + biWeekly + "."
+console.log("/nYour take-home pay each check will be " + biWeekly + "."
