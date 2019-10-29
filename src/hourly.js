@@ -20,4 +20,4 @@ let sundayPay = sundayHours * hourlyWage;
 
 let weekPay = mondayPay+tuesdayPay+wednesdayPay+thursdayPay+fridayPay+saturdayPay+sundayPay;
 weekPay = weekPay.toLocaleString("en", { style: "currency", currency: "USD"});
-console.log("You'll make " + weekPay + " this week.")
+console.log("\nYou'll make " + weekPay + " this week.")
